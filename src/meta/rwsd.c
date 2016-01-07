@@ -45,8 +45,7 @@ static void read_rwav(struct rwav_data * rd)
             return;
 
         /* little endian, version 2 */
-        if ((uint32_t)read_32bitBE(rd->offset+4,rd->streamFile)!=0xFFFE4000 ||
-            (uint32_t)read_32bitBE(rd->offset+8,rd->streamFile)!=0x00000102)
+        if ((uint32_t)read_32bitBE(rd->offset+4,rd->streamFile)!=0xFFFE4000
             return;
 
         chunk_table_offset = rd->offset+0x18;
