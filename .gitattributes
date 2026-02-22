@@ -8,3 +8,7 @@
 *.py text eol=lf
 *.vcxproj text eol=crlf
 *.vcxproj.filters text eol=crlf
+
+winamp/sdk/** text eol=crlf
+xmplay/** text eol=crlf
+ext_includes/pstdint.h text eol=crlf
